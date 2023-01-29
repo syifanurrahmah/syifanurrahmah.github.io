@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    /* font-family: Tahoma, sans-serif; */
+    font-family: 'EB Garamond', serif;
+    text-decoration: none;
+    color: black;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0 5rem;
+
+}
+/* 🔽 navbar 🔽 */
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding: 0.5rem 0;
+    align-items: center;
+}
+nav a:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+nav div a{
+    margin-right: 1rem;
+}
+.nav-name{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* 🔼 navbar 🔼*/
+
+section{
+    margin: 2rem 0;
+}
+
+/* 🔽 about 🔽 */
+p{
+    font-size: 1.25rem;
+    text-align: justify;
+}
+#about{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#about div{
+    margin-left: 1rem;
+}
+.profile{
+    height: 30rem;
+}
+@media screen and (max-width: 750px) {
+    .profile{
+        height: 20rem;
+    }
+    #about{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.p-name{
+    padding: 0;
+    margin: -1rem 0;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3B7AB4;
+}
+.p-blue{
+    color: #3B7AB4;
+}
+/* 🔼 about 🔼*/
+
+/* 🔽 portfolio 🔽 */
+#portfolio{
+    text-align: center;
+}
+#portfolio div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 1rem;
+}
+.img-design{
+    width: 30rem;
+}
+@media screen and (max-width: 750px){
+    #portfolio div{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .img-design{
+        width: 20rem;
+    }
+}
+/* 🔼 portfolio 🔼*/
+
+/* 🔽 contact 🔽 */
+#contact{
+    text-align: center;
+    padding: 0.25rem 0;
+    height: 8rem;
+    background-color: black;
+    margin: 0 -5rem;
+}
+#contact h3{
+    color: white;
+}
+.img-square{
+    width: 5px;
+}
+.fa-solid, .fa-brands{
+    color: white;
+    margin: 0 1rem;
+}
+.fa-solid:hover, .fa-brands:hover{
+    color: bisque;
+}
+/* 🔼 contact 🔼*/
